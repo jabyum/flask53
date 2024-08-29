@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все вопросы</title>
+</head>
+<body>
+Все актуальные вопросы <hr>
+{% for question in all_questions %}
+{{ question.get("question") }} <br>
+{{ question.get("main_text") }} <hr>
+{% endfor %}
+<a href="/">Задать вопрос</a>
+
+</body>
+</html>
